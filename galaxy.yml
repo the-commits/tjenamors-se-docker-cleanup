@@ -1,0 +1,20 @@
+---
+namespace: tjenamors
+name: docker_cleanup
+version: 0.0.1
+readme: README.md
+authors:
+  - the-commits
+description: An Ansible role to prune dangling Docker resources (images, containers, volumes, networks).
+license: AGPL-3.0
+tags:
+  - docker
+  - cleanup
+  - prune
+  - maintenance
+dependencies: {}
+repository: https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup
+documentation: https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup
+homepage: https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup
+issues: https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup
+build_ignore: []

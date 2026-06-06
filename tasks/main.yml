@@ -1,0 +1,21 @@
+---
+- name: Build prune command
+  ansible.builtin.set_fact:
+    docker_cleanup_prune_args: >-
+      docker system prune -af
+      {{ '--filter dangling=false' if not docker_cleanup_dangling_only else '' }}
+      {{ '--volumes' if docker_cleanup_prune_volumes else '' }}
+
+- name: Prune dangling Docker resources
+  ansible.builtin.command:
+    cmd: "{{ docker_cleanup_prune_args }}"
+  register: prune_result
+  changed_when: prune_result.stdout_lines | length > 1
+  when: docker_cleanup_auto
+
+- name: Report pruned space
+  ansible.builtin.debug:
+    msg: "{{ prune_result.stdout_lines | reject('match', '^(Total|Deleted)') | list }}"
+  when:
+    - docker_cleanup_auto
+    - prune_result.changed

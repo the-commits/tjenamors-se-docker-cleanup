@@ -1,0 +1,27 @@
+---
+galaxy_info:
+  namespace: tjenamors
+  role_name: docker_cleanup
+  author: the-commits
+  description: Prune dangling Docker resources (images, containers, volumes, networks).
+  company: tjenamors.se
+  license: AGPL-3.0
+  min_ansible_version: "2.14"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - noble
+    - name: Debian
+      versions:
+        - bullseye
+        - bookworm
+    - name: EL
+      versions:
+        - "8"
+        - "9"
+  galaxy_tags:
+    - docker
+    - cleanup
+    - prune
+dependencies: []

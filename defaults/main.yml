@@ -1,0 +1,9 @@
+---
+# Set to true to also prune unused volumes (use with caution — may delete data)
+docker_cleanup_prune_volumes: false
+
+# Filter for dangling images (true = only dangling images, false = all unused)
+docker_cleanup_dangling_only: false
+
+# Run cleanup automatically on every playbook run
+docker_cleanup_auto: false
