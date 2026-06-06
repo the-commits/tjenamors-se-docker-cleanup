@@ -10,16 +10,16 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - jammy
         - noble
+        - resolute
     - name: Debian
       versions:
         - bullseye
         - bookworm
     - name: EL
       versions:
-        - "8"
         - "9"
+        - "10"
   galaxy_tags:
     - docker
     - cleanup
