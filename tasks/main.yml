@@ -3,7 +3,7 @@
   ansible.builtin.set_fact:
     docker_cleanup_prune_args: >-
       docker system prune -af
-      {{ '--filter dangling=false' if not docker_cleanup_dangling_only else '' }}
+      {{ '--filter dangling=true' if docker_cleanup_dangling_only else '' }}
       {{ '--volumes' if docker_cleanup_prune_volumes else '' }}
 
 - name: Prune dangling Docker resources
