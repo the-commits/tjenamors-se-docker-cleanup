@@ -1,6 +1,12 @@
 [![sourcehut](https://img.shields.io/badge/sourcehut-~the--commits/tjenamors--se--docker--cleanup-2d6b9e?logo=sourcehut)](https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup)
 [![GitHub mirror](https://img.shields.io/badge/GitHub-the--commits/tjenamors--se--docker--cleanup-181717?logo=github)](https://github.com/the-commits/tjenamors-se-docker-cleanup)
 
+> **Do not open issues or pull requests on GitHub** — the mirror there is
+> [read-only](https://git.sr.ht/~the-commits/tjenamors-se-docker-cleanup).
+> Please use the [sourcehut issue tracker](https://todo.sr.ht/~the-commits/tjenamors-se-docker-cleanup)
+> and send patches to [~the-commits/tjenamors-se-docker-cleanup@lists.sr.ht](mailto:~the-commits/tjenamors-se-docker-cleanup@lists.sr.ht).
+
+
 # docker_cleanup
 
 An Ansible role to prune dangling Docker resources (images, containers, volumes, networks).
